@@ -30,7 +30,7 @@ slide.addEventListener('transitionend', () => {
         counter = 2;
         slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     }
-    if (counter == 3) {
+    if (counter >= 3) {
         slide.style.transition = "none";
         counter = 0;
         slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
